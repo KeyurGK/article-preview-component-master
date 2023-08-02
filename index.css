@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope:wght@500;700&family=Overpass:wght@400;700&family=Poppins&family=Righteous&display=swap");
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  height: 70%;
+  width: 90%;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: inset 2px 4px hsl(210, 46%, 95%);
+  display: flex;
+  flex-direction: column;
+}
+.container__image {
+  flex: 0 1 45%;
+  height: 100%;
+  overflow-y: hidden;
+}
+.container__image > img {
+  width: 100%;
+  object-fit: contain;
+}
+.container__content {
+  flex: 0 1 55%;
+  padding: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.container__content-header > h3 {
+  font-size: 15px;
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+.container__content-article {
+  font-size: 13px;
+  color: hsl(214, 17%, 51%);
+}
+.container__content-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.container__content-footer > .details {
+  display: flex;
+}
+.container__content-footer > .details > .name > h5 {
+  font-size: 14px;
+  color: hsl(217, 19%, 35%);
+  position: absolute;
+  margin-top: 10px;
+  line-height: 15px;
+}
+.container__content-footer > .details > .name > h5 > span {
+  color: hsl(214, 17%, 51%);
+  font-size: 13px;
+}
+.container__content-footer > .details > .profile-pic,
+.container__content-footer > .share-button {
+  border-radius: 50%;
+  height: 30%;
+  border: none;
+}
+.container__content-footer > .details > .name {
+  margin-left: 10px;
+}
